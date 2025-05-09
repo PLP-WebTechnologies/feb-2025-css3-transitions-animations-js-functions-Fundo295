@@ -1,0 +1,53 @@
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations & localStorage </title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Animation & Preferences Demo</h1>
+        
+        <div class="preferences-panel">
+            <h2>User Preferences</h2>
+            <div class="form-group">
+                <label for="theme">Select Theme:</label>
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="animation-speed">Animation Speed:</label>
+                <select id="animation-speed">
+                    <option value="slow">Slow</option>
+                    <option value="normal">Normal</option>
+                    <option value="fast">Fast</option>
+                </select>
+            </div>
+            <button id="save-btn" class="btn">Save</button>
+        </div>
+        
+        <div class="animation-box">
+            <h2>Animation</h2>
+            <div id="animated-element" class="box"></div>
+            <button id="animate-btn" class="btn">Animate Box</button>
+            <button id="bounce-btn" class="btn">Bounce Effect</button>
+        </div>
+        
+        <div class="image-gallery">
+            <h2>Image Gallery</h2>
+            <div class="gallery">
+                <img src="Lion.jpg" alt="Placeholder 1" class="gallery-img">
+                <img src="monkey.jpg" alt="Placeholder 2" class="gallery-img">
+                <img src="snake.jpg" alt="Placeholder 3" class="gallery-img">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
